@@ -8,5 +8,5 @@ $destination = "D:\Destination"
 $arr = @(Get-ChildItem -Path $source -Directory -Name)
 
 foreach ($file in $arr) {
-  robocopy $source/$file $destination/$file /MIR /TEE
+  robocopy $source/$file $destination/ /MIR /TEE
 }
